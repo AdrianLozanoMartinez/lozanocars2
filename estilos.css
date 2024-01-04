@@ -1,0 +1,381 @@
+/**********************************************************************************MENOS de 768px***********************************************************************/
+body{
+    display: grid;
+    /* Definimos las columnas y filas */
+    grid-template-columns: 100%;  /*Definimos el grosor de dos columnas porque solo tenemos un lateral*/
+    /* grid-template-rows: 70px 50px 580px 70px;  Definimos el grosor las filas, comenzando desde arriba hacia abajo, header,nav,footer */
+    grid-template-rows: 30% 20% 500px 10%;  /*Definimos el grosor las filas, comenzando desde arriba hacia abajo, header,nav,footer*/
+    /* Definimos las celdas*/
+    grid-template-areas:    "zona_header zona_header"  /*Para que el cabezado/header ocupe toda las columnas de una fila*/
+                            "zona_nav zona_nav"      /*Para que la barra de navegación/nav ocupe toda las columnas de una fila*/
+                            "zona_main zona_main"      /*Para que la barra de cuerpo/main ocupe toda las columnas de una fila*/
+                            "zona_footer zona_footer";  /*Para que el pie de página/footer ocupe toda las columnas de una fila*/
+    margin: -0.1%;          /*Quitar los márgenes de fuera*/
+}
+
+@font-face{ /*Declaramos para usar la fuente descargada*/
+    font-family: FuenteLozano;  /*Nombre puesto por mí*/
+    src: url("./fuentes/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+
+
+header{  /*Cabecero*/
+    /*Grid*/
+    grid-area:zona_header; /* Definimos el area de nuestro elemento*/
+    /*Caja*/
+    background-color: #02a2ff;   /*Fondo del encabezado*/
+    /*Fuente Descargada*/
+    font-family: "FuenteLozano";   /*Nombre de como hemos declarado la fuente descargada*/
+    /*Fuente*/
+    color: white;               /*Color de la letra*/
+    /*Posición de la cabecera*/
+    position: fixed;  
+    width: 100%;
+    top: 0;  /*Se coloque arriba del todo*/
+    height: 50px;
+}
+
+#centrarheard{
+    margin-left: 80px;   /*Usado para dejar más centrado el título, ya que con los iconos no terminaba de ponerse en condiciones*/
+    margin-top: 5px;
+}
+
+#logo{
+    position: absolute;  /*De este modo se va a donde indiquemos abajo con text-align, es decir, a la izquierda*/
+    text-align: left;
+    height: 50px;
+}
+
+.identificate{
+    margin-top: 15px;  /*Bajamos el icono un poco para que esé a la altura aproximada del título y logo*/
+    float: right;  /*Lo mandamos a la derecha para que esté cada imagen a un lado del texto*/
+}
+
+.identificate2{
+    margin-right: 10px;  /*Separamos de la derecha para que no esté tan pegado al margen de la web*/
+}
+
+#nav1 {  /*Barra de navegación debajo del cabecero*/
+    /*GRIP*/
+    grid-area:zona_nav;
+    /*Posición de la barra de navegación*/
+    margin: auto;
+    margin-top: -60px;
+}
+
+ul {
+    list-style-type: none;   /*Quitamos el símbolo de la lista*/
+}
+
+li {
+    display: inline;  /*Ponemos en línea la lista*/
+    margin-right: 30px;  /*Separación entre las palabras de la lista */
+}
+
+/* tooltip y tooltiptext para añadir información visible y se vea al ponernos sobre el icono */
+.tooltip {
+    position: relative;
+    display: inline-block;  /*Que coja el mensaje por cada imagen y muestre en dicha posición*/
+}
+  
+.tooltip .tooltiptext {
+    /*Definición de cada imagen*/
+    visibility: hidden;  /*Ocultar letras y muestre al poner el ratón con el hover*/
+    width: 120px;
+    background-color: #02a2ff;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;  /*Redondear bordes*/
+    padding: 5px 0; /*Para no comprimir el fondo con las letras*/
+    /*Ponemos esto para que el texto introducido no modifique los iconos de lugar*/
+    position: absolute;
+    z-index: 1;
+}
+  
+.tooltip:hover .tooltiptext {
+    visibility: visible;  /*Se vea el texto al poner el ratón*/
+}
+
+    /*Fondo de la promoción*/
+ .promocion{
+    background-color: rgb(255, 0, 0);
+    border-radius: 0px 500px 0px 300px / 50px;
+    width: 300px;
+    height: 330px;
+    margin-left: 30%;
+} 
+
+.imagenbordes{
+    border-radius: 700% / 900%;
+    /*Pegar el título y precio a la imagen*/
+    margin-bottom: -40px;
+    margin-top: -30px;
+}
+
+.boton{
+    background-color: rgb(255, 241, 41);
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    border-radius: 100px / 300px;
+}
+
+main, section{  /*Cuerpo*/
+    grid-area:zona_main;  /*GRIP*/
+    text-align: center;
+    font-family:'Estonia', cursive;  /*Usar la fuente Google Font - Estonia*/
+    font-size: 30px;
+    /*Para que cuadre en el marco del cuerpo y se vea todo sin muchos espacios de arriba y abajo*/
+    margin-top: -60px;
+    padding-bottom: 20%;
+}
+
+/*Quitar 3 coches de los 6, para mostrar solo 3 coches*/
+.coches3{
+    display:none !important;   
+}
+
+/*Pegar párrafo y título de productos*/
+.pegaito{
+    margin-top: -20px;
+}
+
+.pegaito2{
+    margin-top: -50px;
+}
+
+/*Importamos la fuente para la sección empresa de Google Font*/
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+.unionsection{   
+    display: inline-flex;  /*Poner en fila los dos section del bloque de información para que se vea en paralelo*/
+    font-family: 'Indie Flower', cursive;  /*Fuente Importada*/
+    font-size: 19px;   /*Tamaño en px*/
+}
+
+.separararticle{
+    margin-right: 10px;
+}
+
+footer{  /*Pie*/
+    grid-area:zona_footer;
+    background-color: #02a2ff;
+    text-align: center;
+    color: white;
+    font-family: "FuenteLozano";
+    font-size: 1.5rem;    /*Tamaño en rem*/
+    font-style: italic;   /*Pone las letras en cursivas*/
+    font-variant: small-caps;
+    /*Posición del pie*/
+    position: fixed;  /*Fijo e la posición*/
+    bottom: 0;  /*Se coloque abajo del todo*/
+    width: 100%;
+    height: 5%;
+    
+}
+
+#footerbottom{  /*Posición de los iconos del pie*/
+    position: relative;
+    top: -5px;
+}
+
+.separariconopie{  /*Separación entre los iconos del pie*/
+    margin-right: 20px;
+    width: 20px;
+    height: 15px;
+}
+
+h1{
+    font-family: "FuenteLozano";
+    text-align: center;           /*Alineación del texto*/
+}
+
+
+/*Coches.html*/
+.imagenborde{
+    border-radius: 400px / 500px;
+    /*Pegar el título y precio a la imagen*/
+    margin-bottom: -40px;
+    margin-top: -30px;
+}
+
+.imagenborde:hover{  /*Al pasar el ratón se pone borde*/
+    border:rgb(255, 241, 41) solid 10px;
+    width: 600px;
+    height: 600px;
+}
+
+.letramodelo{
+    text-transform: uppercase;  /*Poner en mayúscula*/
+    letter-spacing: 8px;  /*Separar letras*/
+}
+
+@font-face{ 
+    font-family: FuenteCoches;  
+    src: url("./fuentes/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+
+table{
+    margin-left: 220px;
+}
+
+th, td {
+    border: rgb(0, 174, 255) solid 2px;
+}
+
+.texto{  /*Margen al texto y columna*/
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.columnas{
+    column-count:2;
+    column-rule-style:solid;  /*Separador*/
+    column-rule-color:palevioletred;
+}
+
+/*Ocultar 2 columnas la tabla*/
+.Nomostrar{
+    visibility: hidden;   
+}
+
+.eliminar{
+    display: none;
+}
+
+.peque{
+    font-size: 20px;
+}
+
+#indicador {  /*Barra de navegación debajo del cabecero*/
+    /*GRIP*/
+    grid-area:zona_nav;
+    /*Posición de la barra de navegación*/
+    margin: left;
+    font-family:'Estonia', cursive;  /*Usar la fuente Google Font - Estonia*/
+    font-size: 30px;
+    margin-top: -120px;
+}
+
+#nav2{
+    visibility:hidden;
+    margin-top: 200px;
+}
+
+input:valid {   /*Si lo que introducimos es válido según las condiciones del html se pondrá en verde*/
+    background-color: rgb(94, 255, 94);
+}
+
+.ocul{   /*Ocultamos el span del texto para mostrarlo luego al seleccionar*/
+    display:none;
+}
+
+input:focus:invalid + .ocul{   /*Si lo que introducimos es inválido y le hemos dado click o pulsado el botón enviar se mostrará el span del texto*/
+    display:block;
+}
+
+input:focus:invalid{   /*Si pulsamos y lo introducido según las condiciones del html es inválido se pondrá en rojo*/
+    background-color: red;
+}  
+
+.ocul{   /*Clases al texto del error*/
+  font-size: x-large;
+  color: red;
+}
+
+.cen{        
+    left: 50%;
+    right: 50%;
+    margin-top: -180px;
+}
+
+/**********************************************************************************768px o más**************************************************************************/
+@media screen and (min-width:768px) {
+    #nav2 {  /*Barra de navegación debajo del cabecero*/
+        /*GRIP*/
+        grid-area:zona_nav;
+        /*Posición de la barra de navegación*/
+        margin: auto;
+        margin-top: -80px;
+        font-family:'Estonia', cursive;  /*Usar la fuente Google Font - Estonia*/
+        font-size: 30px;
+        visibility: visible;  /*Para que se vea, ya que lo oculto arriba en la resolución pequeña*/
+    }
+    #nav1{
+        visibility:hidden;
+    }
+
+    .coches3 { 
+        display:inline !important;  /*Mostrar 6 coches que en la otra resolución se ocultaba*/
+    }
+    section{
+        display: grid;
+        grid-template-columns: 35% 35% 35%;
+    }
+
+    .promocion{
+        margin-top: 50px;
+        margin-left: 100%;
+    } 
+
+    .imagenborde{
+        margin-bottom: -35px;
+        margin-top: -30px;
+    }
+    
+    h2{
+        margin-top: -8px;
+    }
+
+    /*Fondos según si es par o impar*/
+    .coches6:nth-child(odd){  /*Impar*/
+        background-color: rgba(51, 255, 0, 0.6);
+        opacity: 0.8;  /*Más oscuro*/
+    }
+    .coches6:nth-child(even){ /*Par*/
+        background-color: rgba(0, 0, 255,0.6);
+        opacity: 0.5;  /*Más claro*/
+    }
+
+
+    .imagenborde{
+        border-radius: 400px / 500px;
+        /*Pegar el título y precio a la imagen*/
+        margin-bottom: -10px;
+        margin-top: -30px;
+        /* margin-left: 110%; */
+    }
+    
+    .juntitos{
+        display: inline-block;
+        margin-left: 200px;
+        margin-right: -200px;
+        margin-top: 30px;
+    }
+
+    /*Mostrar 2 columnas la tabla*/
+    .Nomostrar{
+        visibility: visible;  
+    }
+
+    table{
+        margin-left: 0px;
+    }
+
+    #indicador {  /*Indicador pan de migas, donde nos indica donde estamos, barra de navegación debajo del cabecero*/
+        /*GRIP*/
+        grid-area:zona_nav;
+        /*Posición de la barra de navegación*/
+        margin: left;
+        font-family:'Estonia', cursive;  /*Usar la fuente Google Font - Estonia*/
+        font-size: 30px;
+        margin-bottom: -500px;
+    }
+
+    .cen{        
+        left: 50%;
+        margin-right: -500px;
+        margin-top: -180px;
+    }
+    
+}

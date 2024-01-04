@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Coches</title>
+    <meta charset="UTF-8">
+    <meta name="title" content="CSS">
+    <link rel="stylesheet" href="estilos.css" media="screen">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="imagen/logo.png" width="75" height="75" alt="logo">
+        <h5 class="identificate identificate2">Identifícate</h5>
+        <img class="identificate" src="imagen/identificate.png" width="25" height="25" alt="identificate">
+        <h1 id="centrarheard">Lozano's cars</h1>
+    </header>
+
+    <nav id="indicador">
+        <ul>
+            <li><a href="index.html"><b>Portada</b></a></li>
+            <li><b> -> </b></li>
+            <li><b>Promoción fin de año</b></li>
+        </ul>
+    </nav>
+
+    <!-- Menos de 768px -->
+    <nav id="nav1">
+        <ul>
+            <!-- tooltip y tooltiptext para añadir información visible y se vea al ponernos sobre el icono -->
+            <li class="tooltip"><img src="imagen/modelo.png" width="30" height="30" alt="Modelos">
+                <div class="tooltiptext"><a
+                        href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es">Modelos</a></div>
+            </li>
+            <li class="tooltip"><img src="imagen/ocasion.png" width="30" height="30" alt="Vehículos de ocasión">
+                <div class="tooltiptext">
+                    <a href="promocion.html"><b class="peque">Promoción fin de año</b></a>
+                    <br>
+                    <b class="peque">Tasa tu coche</b>
+                </div>
+            </li>
+            <li class="tooltip"><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es"><img
+                        src="imagen/post.png" width="30" height="30" alt="Postventa">
+                    <div class="tooltiptext">Servicio Posventa</div>
+                </a>
+            </li>
+            <li class="tooltip"><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es"><img
+                        src="imagen/empresa.png" width="30" height="30" alt="Nuestra empresa">
+                    <div class="tooltiptext">Nuestra empresa</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 768px o Más-->
+    <nav id="nav2">
+        <ul>
+            <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es"><b>Modelos</b></a></li>
+            <li class="tooltip"><b>Vehículos de ocasión</b>
+                <div class="tooltiptext">
+                    <a href="promocion.html"><b class="peque">Promoción fin de año</b></a>
+                    <br>
+                    <b class="peque">Tasa tu coche</b>
+                </div>
+            </li>
+
+            </li>
+            <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es"><b>Servicio Posventa</b></a></li>
+            <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es"><b>Nuestra empresa</b></a></li>
+        </ul>
+    </nav>
+
+
+
+    <main class="juntitos">
+        <section>
+            <h2 class="eliminar">Promoción</h2>
+            <article>
+                <h2 class="eliminar">Coche</h2>
+                <img class="imagenborde" src="imagen/cochesport.jpg" width="250" height="150" alt="cocchesport">
+                <h2 class="letramodelo">Bugatti Chiron Super Sport 300</h2>
+                <p class="texto">Se diferencia del modelo de serie en incrementar la potencia a 1600 CV (1578 HP; 1177
+                    kW), es decir, 100 CV (99 HP; 74 kW) más que la versión convencional. Dispone de la misma
+                    configuración aerodinámica de la unidad que superó los 490 km/h (304 mph)</p>
+                <table>
+                    <thead>
+                        <!--Cabecera-->
+                        <tr>
+                            <!--Fila-->
+                            <th><b>Versión del modelo</b></th>
+                            <!--Columnas-->
+                            <th><b>Precio</b></th>
+                            <th class="Nomostrar"><b>Cuota al mes (€ / mes)</b></th>
+                            <th class="Nomostrar"><b>Tipo de financiación</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!--Cuerpo-->
+                        <tr>
+                            <td><b>Chiron Super Sport 300+</b></td>
+                            <td>13.200€</td>
+                            <td class="Nomostrar">140€</td>
+                            <td class="Nomostrar">10 años</td>
+                        </tr>
+                        <tr>
+                            <td><b>C110 Ans Edition</b></td>
+                            <td>14.500€</td>
+                            <td class="Nomostrar">150€</td>
+                            <td class="Nomostrar">10 años</td>
+                        </tr>
+                        <tr>
+                            <td><b>Chiron Pur Sport</b></td>
+                            <td>20.000€</td>
+                            <td class="Nomostrar">200€</td>
+                            <td class="Nomostrar">10 años</td>
+                        </tr>
+                        <tr>
+                            <td><b>Chiron Sport</b></td>
+                            <td>15.000€</td>
+                            <td class="Nomostrar">160€</td>
+                            <td class="Nomostrar">10 años</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article>
+                <h2 class="eliminar">Requisitos</h2>
+                <p><b>Bugatti Chiron Super Sport 300</b></p>
+                <p class="columnas texto"><b>REQUISITOS DE FINANCIACIÓN: <b>Edad</b>: Se debe ser mayor de edad.
+                        <b>Documentación</b>: Aportar un documento de identidad como el DNI o el NIE.<b>Cantidad
+                            fija</b>: A diferencia de los créditos, en los préstamos se entrega en el momento la
+                        cantidad total solicitada y esta no puede ser ampliada posteriormente.<b>Ser solvente</b>: Hay
+                        que demostrar que se podrá devolver el dinero prestado en los plazos y según las condiciones
+                        acordadas. Para esto, es importante tener en cuenta la capacidad de endeudamiento<b>Garantía de
+                            devolución de deuda</b>: No suelen ser necesarios avales para los préstamos para financiar
+                        un coche. Lo habitual es que sea el prestatario el único responsable que debe hacer frente a los
+                        pagos o responder con sus derechos, bienes e ingresos presentes y futuros.<b>Justificante de
+                            ingresos</b>: Se deben demostrar los ingresos que aseguran la buena devolución del préstamo.
+                        Basta con presentar las últimas nóminas. En el caso de los trabajadores por cuenta propia, deben
+                        probar su condición y sus ingresos.<b>Declaración IRPF</b>: En ella quedan probados los
+                        ingresos, así como las propiedades y las deudas.<b>Contrato de trabajo</b>: Es una garantía de
+                        que los ingresos son recurrentes. Un contrato indefinido pondrá mucho más fácil la posibilidad
+                        de financiar un coche.<b>Justificante de bienes</b>: Se deben presentar las escrituras de los
+                        bienes inmuebles que se posean.<b>No ser moroso</b>: Si el solicitante de la financiación está
+                        incluido en ASNEF o en alguna lista de morosos no será válido para una financiación
+                        tradicional.</b></p>
+            </article>
+        </section>
+        <section>
+            <article class="cen">
+                <form action="" autocomplete="on" validate>
+                    <h2><u>Solicitar información sobre el plan MOVES</u></h2>
+                    <fieldset>
+                        <legend><b>Datos personales del usuario</b></legend>
+                        <label for="nombre"><b>Nombre</b></label>
+                        <input type="text" id="nombre" name="nombre" maxlength="15" required tabindex="1" minlength="3">
+                        <!--No puede escribir más de 15 caracteres y tabindex para ser seleccionado mediante teclado, con un mínimo de 3 letras porque menos no existen nombres ni apellidos-->
+                        <span class="ocul"><b>Es obligatorio, max 15 caracteres</b></span>
+                        <br>
+                        <label for="apellidos"><b>Apellidos</b></label>
+                        <input type="text" id="apellidos" name="apellidos" maxlength="30" required tabindex="1" minlength="3">
+                        <!--No puede escribir más de 30 caracteres-->
+                        <span class="ocul"><b>Es obligatorio, max 30 caracteres</b></span>
+                        <br>
+                        <label for="email"><b>Correo electrónico</b></label>
+                        <input type="text" id="email" name="email" maxlength="20" required tabindex="2" minlength="6" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+.[a-z]{2,4}">
+                        <!--No puede escribir más de 20 caracteres, que tenga en el correo letras de la "a" a la "z" o número del "0" al "9" o símbolos "._%+-". Luego el"@". Por último los mismo que el principio. El "." y la extensión que será de la "a" a la "z" de 2 o 4 caracteres máximo-->
+                        <span class="ocul"><b>Es obligatorio, max 20 caracteres -> nombre@dominio.extensión</b></span>
+                        <br>
+                        <label for="telefono"><b>Teléfono de contacto</b></label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[6-9]{1}[0-9]{8}" required tabindex="2">
+                        <!-- el primer número debe ser del 6 al 9 no puede ser menor del 6 y el resto (8) dígito que compone un teléfono puede ser del 0 al 9-->
+                        <span class="ocul"><b>Es obligatorio, debe empezar por 6,7,8 o 9 y contener 9 dígito</b></span>
+                        <br>
+                        <hr>
+                        <label for="informacion"><b>Desea recibir información gratuita sobre nuestra promoción de fin de
+                                año</b></label>
+                        <br>
+                        <input type="radio" id="informacion" name="información" value="si" tabindex="3"><b>Si</b>
+                        <input type="radio" id="informacion" name="información" value="no" tabindex="3" checked><b>NO</b>
+                    </fieldset>
+                    <br>
+                    <fieldset>
+                        <legend><b>Seleccione</b></legend>
+                        <h3><b>La versión o las versiones del modelo que le interesa</b></h3>
+                        <hr>
+                        <input type="checkbox" id="ChironSuperSport300+" name="información"
+                            value="ChironSuperSport300+" tabindex="4">
+                        <label for="ChironSuperSport300+"><b>Chiron Super Sport 300+</b></label>
+                        <br>
+                        <input type="checkbox" id="C110AnsEdition" name="información" value="C110AnsEdition" tabindex="4">
+                        <label for="C110AnsEdition"><b>C110 Ans Edition</b></label>
+                        <br>
+                        <input type="checkbox" id="ChironPurSport" name="información" value="ChironPurSport" tabindex="4">
+                        <label for="ChironPurSport"><b>Chiron Pur Sport</b></label>
+                        <br>
+                        <input type="checkbox" id="ChironSport" name="información" value="ChironSport" tabindex="4">
+                        <label for="ChironSport"><b>Chiron Sport</b></label>
+                        <br>
+                        <select name="numero" id="numero1" tabindex="5">
+                            <option value=" " selected disabled>Indique el uso del vehículo</option> 
+                            <!-- selected disabled Para que no se pueda usar y se muestre en el inicio y nod ejar valor por defecto ninguna opción -->
+                            <optgroup label="Uso">
+                                <option value="1">Particular y autónomo</option>
+                                <option value="2">PYME</option>
+                                <option value="3">Gran empresa</option>
+                            </optgroup>
+                            <optgroup label="Achatarramiento">
+                                <option value="4">Con achatarramiento</option>
+                                <option value="5">Sin achatarramiento</option>
+                            </optgroup>
+                        </select>
+                    </fieldset>
+                    <fieldset>
+                        <legend><b>Valoraciones</b></legend>
+                        <select name="numero" id="numero2" tabindex="6">
+                            <option value=" " selected disabled>Valore de 1 a 10 la experiencia con nuestro
+                                asesoramiento</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+
+                    </fieldset>
+
+                    <button name="enviar" id="enviar" tabindex="7">Enviar</button>
+                    <button name="cancelar" id="cancelar" tabindex="7">Cancelar</button>
+
+                </form>
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <div id="footerbottom">
+            <img class="separariconopie" src="imagen/instagram.png" width="25" height="25" alt="instagram">
+            <img class="separariconopie" src="imagen/facebook.png" width="25" height="25" alt="facebook">
+            <img class="separariconopie" src="imagen/linkedin.png" width="25" height="25" alt="linkedin">
+        </div>
+    </footer>
+
+</body>
+
+</html>

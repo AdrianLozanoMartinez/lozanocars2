@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Lozano's cars</title>
+    <meta charset="UTF-8">
+    <meta name="title" content="CSS">
+    <link rel="stylesheet" href="estilos.css" media="screen">
+    <!--Llamar al CSS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
+    <!-- Llama a la fuente Google Font - Estonia -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Realizar responsive-->
+</head>
+
+<body>
+
+    <header>
+        <img id="logo" src="imagen/logo.png" width="75" height="75" alt="logo">
+        <h5 class="identificate identificate2">Identifícate</h5>
+        <img class="identificate" src="imagen/identificate.png" width="25" height="25" alt="identificar">
+        <h1 id="centrarheard">Lozano's cars</h1>
+    </header>
+
+    <!-- Menos de 768px -->
+    <nav id="nav1">
+        <ul>
+            <!-- tooltip y tooltiptext para añadir información visible y se vea al ponernos sobre el icono -->
+            <li class="tooltip"><img src="imagen/modelo.png" width="30" height="30" alt="Modelos">
+                <div class="tooltiptext"><a
+                        href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es">Modelos</a></div>
+            </li>
+            <li class="tooltip"><img src="imagen/ocasion.png" width="30" height="30" alt="Vehículos de ocasión">
+                <div class="tooltiptext">
+                    <a href="promocion.html"><b class="peque">Promoción fin de año</b></a>
+                    <br>
+                    <b class="peque">Tasa tu coche</b>
+                </div>
+            </li>
+            <li class="tooltip"><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es"><img
+                        src="imagen/post.png" width="30" height="30" alt="Postventa">
+                    <div class="tooltiptext">Servicio Posventa</div>
+                </a>
+            </li>
+            <li class="tooltip"><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es"><img
+                        src="imagen/empresa.png" width="30" height="30" alt="Nuestra empresa">
+                    <div class="tooltiptext">Nuestra empresa</div>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- 768px o Más-->
+    <nav id="nav2">
+        <ul>
+            <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es"><b>Modelos</b></a></li>
+            <li class="tooltip"><b>Vehículos de ocasión</b>
+                <div class="tooltiptext">
+                    <a href="promocion.html"><b class="peque">Promoción fin de año</b></a>
+                    <br>
+                    <b class="peque">Tasa tu coche</b>
+                </div>
+            </li>
+
+            </li>
+            <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es"><b>Servicio Posventa</b></a></li>
+            <li><a href="https://www.w3.org/WAI/fundamentals/accessibility-intro/es"><b>Nuestra empresa</b></a></li>
+        </ul>
+    </nav>
+
+    <!--768px menos y más-->
+    <main>
+        <section>
+            <h2 class="eliminar">Zona de promoción</h2>
+            <!--Especifico las zonas y no lo saco en el html-->
+            <article class="promocion">
+                <h2>Car Sport</h2>
+                <img class="imagenbordes" src="imagen/sport.jpg" width="250" height="150" alt="sport">
+                <p><b>13.200</b></p>
+                <button class="boton" onclick="window.location.href='coches.html'">Descúbrelo</button>
+                <!-- Botón con enlace a la página -->
+            </article>
+        </section>
+        <section>
+            <h2 class="eliminar">Zona de productos</h2>
+            <article class="coches6 coches3">
+                <img src="imagen/fordfiesta.jpg" width="250" height="150" alt="fiesta">
+                <h2 class="pegaito">Ford Fiesta</h2>
+                <p class="pegaito2"><b>Diesel</b></p>
+            </article>
+            <article class="coches6 coches3">
+                <img src="imagen/mini.jpg" width="250" height="150" alt="mini">
+                <h2 class="pegaito">Mini</h2>
+                <p class="pegaito2"><b>Híbrido</b></p>
+            </article>
+            <article class="coches6 coches3">
+                <img src="imagen/ibiza.jpeg" width="250" height="150" alt="ibiza">
+                <h2 class="pegaito">Ibiza</h2>
+                <p class="pegaito2"><b>Gasolina</b></p>
+            </article>
+            <article class="coches6">
+                <img src="imagen/renault.jpg" width="250" height="150" alt="renault">
+                <h2 class="pegaito">Renault</h2>
+                <p class="pegaito2"><b>Gasolina</b></p>
+            </article>
+            <article class="coches6">
+                <img src="imagen/suzuki.jpg" width="250" height="150" alt="suzuki">
+                <h2 class="pegaito">Suzuki</h2>
+                <p class="pegaito2"><b>Diesel</b></p>
+            </article>
+            <article class="coches6">
+                <img src="imagen/ferrari.jpg" width="250" height="150" alt="ferrari">
+                <h2 class="pegaito">Ferrari</h2>
+                <p class="pegaito2"><b>Gasolina</b></p>
+            </article>
+        </section>
+        <section class="unionsection">
+            <h2 class="eliminar">Bloque de información</h2>
+            <article>
+                <h2>Información</h2>
+                <img src="imagen/logo.png" width="250" height="150" alt="logo2">
+                <p><b>CIF: B92584955</b></p>
+                <p><b>Dirección: Plaza la Begana nº 5</b></p>
+            </article>
+            <article class="separararticle">
+                <h2>Contacto</h2>
+                <img src="imagen/contacto.jpg" width="250" height="150" alt="contacto">
+                <p><b>lozanocar@gmail.com</b></p>
+                <p><b>695684235</b></p>
+            </article>
+        </section>
+    </main>
+
+
+    <footer>
+        <div id="footerbottom">
+            <img class="separariconopie" src="imagen/instagram.png" width="25" height="25" alt="instagram">
+            <img class="separariconopie" src="imagen/facebook.png" width="25" height="25" alt="facebook">
+            <img class="separariconopie" src="imagen/linkedin.png" width="25" height="25" alt="linkedin">
+        </div>
+    </footer>
+
+</body>
+
+</html>
